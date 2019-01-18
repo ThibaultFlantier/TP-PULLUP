@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,700');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrapper {
+  padding: 50px;
+}
+@media screen and (min-width: 64em) {
+  .wrapper {
+    padding: 100px;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  -moz-text-size-adjust: unset;
+  -webkit-text-size-adjust: unset;
+  -ms-text-size-adjust: unset;
+  text-size-adjust: unset;
+}
+@media screen and (min-width: 64em) {
+  body {
+    font-size: 20px;
+  }
+}
+a {
+  color: #108bd9;
+  text-decoration: none;
+}
+a:hover {
+  color: #0e7cc1;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+  margin: 0;
+}
+h2,
+.h2 {
+  color: #2b3e4f;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 64em) {
+  h2,
+  .h2 {
+    font-size: 2em;
+  }
+}
+h3,
+.h3 {
+  color: #108bd9;
+  font-weight: 700;
+}
+h3 i,
+.h3 i {
+  margin-right: 10px;
+}
+h4,
+.h4 {
+  font-weight: 700;
+  color: #2b3e4f;
+}
+p {
+  color: #bdbdbd;
+}
+.logo {
+  font-size: 1.5em;
+}
+h1,
+.bouton {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: #bdbdbd;
+  margin: 50px 0;
+}
+@media screen and (min-width: 64em) {
+  .separator {
+    display: none;
+  }
+}
+.bouton {
+  background-color: white;
+  padding: 12.5px 33.33333333px;
+  display: inline-block;
+}
+.bouton:hover {
+  box-shadow: inset 0 0 2px #212121;
+}
+.bouton.primary {
+  background-color: #108bd9;
+  color: white;
+}
+.blocs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blocs .bloc {
+  flex: 0 0 100%;
+  margin: 25px 0;
+}
+@media screen and (min-width: 64em) {
+  .blocs .bloc {
+    flex: 0 0 20%;
+  }
+}
+header {
+  background-color: #2b3e4f;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  padding: 0 50px;
+}
+@media screen and (min-width: 64em) {
+  header {
+    justify-content: space-between;
+  }
+}
+header nav a {
+  margin-left: 2em;
+}
+header nav a.active {
+  color: #eceff1;
+}
+section#callout {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 600px;
+  background-color: #108bd9;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+}
+@media screen and (min-width: 64em) {
+  section#callout {
+    padding: 100px;
+  }
+}
+section#callout h1 {
+  border: 2px solid;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 25px;
+}
+@media screen and (min-width: 64em) {
+  section#callout h1 {
+    font-size: 3em;
+    width: auto;
+    padding: 50px 150px;
+    margin-bottom: 25px;
+  }
+}
+section#callout p {
+  color: white;
+}
+@media screen and (min-width: 64em) {
+  section#callout p {
+    font-size: 1.5em;
+  }
+}
+main {
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  top: 670px;
+}
+main section#intro {
+  padding: 50px;
+}
+@media screen and (min-width: 64em) {
+  main section#intro {
+    padding: 100px;
+  }
+}
+main section#intro h2 {
+  margin-bottom: 50px;
+}
+main section#download {
+  padding: 50px;
+  background-color: #2b3e4f;
+}
+@media screen and (min-width: 64em) {
+  main section#download {
+    padding: 100px;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section#download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main section#download .images {
+    flex: 0 0 30%;
+  }
+  main section#download .content {
+    flex: 0 0 60%;
+  }
+}
+main section#download .separator {
+  background-color: #212121;
+}
+main section#download h2 {
+  color: white;
+  text-align: left;
+}
+main section#contact {
+  padding: 50px;
+}
+@media screen and (min-width: 64em) {
+  main section#contact {
+    padding: 100px;
+  }
+}
+main section#contact form {
+  margin-top: 75px;
+}
+main section#contact form label {
+  margin: 25px 0;
+  display: block;
+}
+main section#contact form label:first-child {
+  margin-top: 0;
+}
+main section#contact form input {
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  border: 2px solid #bdbdbd;
+  margin: 12.5px 0 25px;
+}
+main section#contact form input.bouton {
+  border: none;
+  width: auto;
+}
+@media screen and (min-width: 64em) {
+  main section#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main section#contact h2 {
+    flex: 0 0 100%;
+    margin-bottom: 50px;
+  }
+  main section#contact form {
+    flex: 0 0 45%;
+  }
+  main section#contact .content {
+    flex: 0 0 45%;
+  }
+}
+main section#photo {
+  background-image: url(http://66.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+@media screen and (min-width: 64em) {
+  main section#photo {
+    padding: 100px;
+  }
+}
+main section#photo h2 {
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 50px black;
+  text-transform: none;
+  font-size: 3em;
+}
+main section#prices {
+  padding: 50px;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 64em) {
+  main section#prices {
+    padding: 100px;
+  }
+}
+@media screen and (min-width: 64em) {
+  main section#prices {
+    display: flex;
+    justify-content: space-between;
+  }
+  main section#prices .pricebox {
+    flex: 0 0 30%;
+  }
+}
+main section#prices .pricebox {
+  border: 1px solid #bdbdbd;
+  text-align: center;
+  margin-bottom: 50px;
+}
+main section#prices .pricebox .pricebox-header {
+  color: white;
+  text-transform: uppercase;
+  padding: 50px;
+  font-size: 1.5em;
+}
+main section#prices .pricebox .pricebox-header .pricebox-price {
+  font-size: 4em;
+  margin: 16.66666667px 0;
+}
+main section#prices .pricebox .pricebox-header .pricebox-time {
+  color: #eceff1;
+}
+main section#prices .pricebox.price1 .pricebox-header {
+  background-color: #108bd9;
+}
+main section#prices .pricebox.price2 .pricebox-header {
+  background-color: #2b3e4f;
+}
+main section#prices .pricebox.price3 .pricebox-header {
+  background-color: #212121;
+}
+main section#prices .pricebox .pricebox-content ul li {
+  background-color: #eceff1;
+  color: #2b3e4f;
+  padding: 25px;
+  border-bottom: 1px solid #bdbdbd;
+}
+main section#prices .pricebox .pricebox-actions {
+  padding: 50px;
+}
+main section#prices .pricebox .pricebox-actions .bouton {
+  border: 2px solid #bdbdbd;
+  font-weight: 700;
+  color: #212121;
+}
+main section#infos {
+  padding: 50px;
+}
+@media screen and (min-width: 64em) {
+  main section#infos {
+    padding: 100px;
+  }
+}
+main section#infos h2 {
+  text-align: left;
+  font-weight: 700;
+}
+@media screen and (min-width: 64em) {
+  main section#infos .bloc {
+    flex: 0 0 45%;
+  }
+}
+main footer {
+  text-align: center;
+}
+main footer .footer-top {
+  background-color: #eceff1;
+  padding: 75px;
+}
+main footer .footer-top .logo {
+  color: #2b3e4f;
+}
+main footer .footer-bottom {
+  background-color: #2b3e4f;
+  padding: 25px;
+}
+main footer .footer-bottom ul li {
+  padding-bottom: 25px;
+}
+main footer .footer-bottom ul li:last-child {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 64em) {
+  main footer .footer-bottom ul li {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+}
+main footer .footer-bottom ul li a {
+  color: #eceff1;
+}
+main footer .footer-bottom ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 64em) {
+  main footer .footer-bottom ul li a {
+    padding: 0 25px;
+  }
+}
